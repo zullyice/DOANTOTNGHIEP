@@ -44,10 +44,9 @@
                                         <div class="product-details">
                                             <h6 style="text-align: center">${listGiay.tenGiayTheThao}</h6>
                                             <div class="price">
-                                                <h6 style="text-align: center">
+                                                <h6 style="text-align: center; color: darkred">
 
-                                                    <span style="color: red"> Đ </span>
-                                                    <fmt:formatNumber type="" value="${listGiay.giaBan}" pattern="#,##0.###" /> VNĐ
+                                                    <fmt:formatNumber  type="" value="${listGiay.giaBan}"  pattern="#,##0.###" /> VNĐ
 
                                                 </h6>
                                             </div>
@@ -124,7 +123,6 @@
                                                 <h6 style="text-align: center">${listSale.giayTheThao.tenGiayTheThao}</h6>
                                                 <div class="price">
                                                     <h6 style="text-align: center">
-                                                        <span style="color: red"> Đ </span>
                                                         <del>
                                                             <fmt:formatNumber type="" value="${listSale.giayTheThao.giaBan}" pattern="#,##0.###" /> VNĐ
                                                         </del>
