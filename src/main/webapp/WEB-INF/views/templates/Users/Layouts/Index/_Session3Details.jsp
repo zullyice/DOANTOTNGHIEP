@@ -224,15 +224,14 @@
                                     >
 
                                         <a href="${pageContext.request.contextPath}/GiayTheThao/detailThongTinGiayTheThao/${listGiay.id}">
-                                            <div class="card" style="height: 300px;width: 200px">
+                                            <div class="card" style="height: 300px;width: 210px;border: chocolate">
                                                 <img class="card-img-top" style="height: 200px"
                                                      src="/upload/${listGiay.image.get(0).link}" alt="">
                                                 <div class="card-body">
                                                     <h6 class="card-title"
                                                         style="text-align: center">${listGiay.tenGiayTheThao}</h6>
                                                     <div class="price">
-                                                        <h6 style="text-align: center">
-                                                            <span style="color: red"> Đ </span>
+                                                        <h6 style="text-align: center; color: darkred">
                                                             <fmt:formatNumber type="" value="${listGiay.giaBan}"
                                                                               pattern="#,##0.###"/> VNĐ
                                                         </h6>
