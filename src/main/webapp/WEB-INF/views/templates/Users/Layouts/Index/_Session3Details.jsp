@@ -156,8 +156,8 @@
                             <c:forEach items="${trongLuong}" var="trongLuong" begin="0" end="3">
                                 <div style="margin-bottom: 5px;">
                                     <label>
-                                        <input type="checkbox" class="trongLuongCheckbox" value="${trongLuong.tenTrongLuong}"
-                                               onchange="getSelectedTrongLuong()">${trongLuong.tenTrongLuong}
+                                        <input type="checkbox" class="trongLuongCheckbox" value="${ trongLuong.tenTrongLuong}"
+                                               onchange="getSelectedTrongLuong()"> ${trongLuong.tenTrongLuong}
                                     </label>
                                 </div>
                             </c:forEach>
@@ -167,7 +167,7 @@
                                 <div style="margin-bottom: 5px;">
                                     <label>
                                         <input type="checkbox" class="trongLuongCheckbox" value="${trongLuong.tenTrongLuong}"
-                                               onchange="getSelectedTrongLuong()">${trongLuong.tenTrongLuong}
+                                               onchange="getSelectedTrongLuong()"> ${trongLuong.tenTrongLuong}
                                     </label>
                                 </div>
                             </c:forEach>
@@ -182,7 +182,7 @@
                                 <div style="margin-bottom: 5px;">
                                     <label>
                                         <input type="checkbox" class="brandCheckbox" value="${thuongHieu.tenThuongHieu}"
-                                               onchange="getSelectedBrands()">${thuongHieu.tenThuongHieu}
+                                               onchange="getSelectedBrands()"> ${thuongHieu.tenThuongHieu}
                                     </label>
                                 </div>
                             </c:forEach>
@@ -192,7 +192,7 @@
                                 <div style="margin-bottom: 5px;">
                                     <label>
                                         <input type="checkbox" class="brandCheckbox" value="${thuongHieu.tenThuongHieu}"
-                                               onchange="getSelectedBrands()">${thuongHieu.tenThuongHieu}
+                                               onchange="getSelectedBrands()"> ${thuongHieu.tenThuongHieu}
                                     </label>
                                 </div>
                             </c:forEach>

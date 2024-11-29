@@ -11,7 +11,7 @@
                         <div class="single-deal">
                             <div class="overlay"></div>
                             <img class="img-fluid w-100" src="../../../../../../resources/img/category/c1.jpg" alt="">
-                            <a href="../../../../../../resources/img/category/c1.jpg" class="img-pop-up" target="_blank">
+                            <a href="#" class="img-pop-up" target="_blank">
                                 <div class="deal-details">
                                     <h6 class="deal-title">Giày thể thao dành cho thể thao</h6>
                                 </div>
@@ -22,7 +22,7 @@
                         <div class="single-deal">
                             <div class="overlay"></div>
                             <img class="img-fluid w-100" src="../../../../../../resources/img/category/c2.jpg" alt="">
-                            <a href="img/category/c2.jpg" class="img-pop-up" target="_blank">
+                            <a href="#" class="img-pop-up" target="_blank">
                                 <div class="deal-details">
                                     <h6 class="deal-title">Giày thể thao dành cho thể thao</h6>
                                 </div>
@@ -33,7 +33,7 @@
                         <div class="single-deal">
                             <div class="overlay"></div>
                             <img class="img-fluid w-100" src="../../../../../../resources/img/category/c3.jpg" alt="">
-                            <a href="../../../../../../resources/img/category/c3.jpg" class="img-pop-up" target="_blank">
+                            <a href="#" class="img-pop-up" target="_blank">
                                 <div class="deal-details">
                                     <h6 class="deal-title">Sản phẩm dành cho cặp đôi</h6>
                                 </div>
@@ -44,7 +44,7 @@
                         <div class="single-deal">
                             <div class="overlay"></div>
                             <img class="img-fluid w-100" src="../../../../../../resources/img/category/c4.jpg" alt="">
-                            <a href="../../../../../../resources/img/category/c4.jpg" class="img-pop-up" target="_blank">
+                            <a href="#" class="img-pop-up" target="_blank">
                                 <div class="deal-details">
                                     <h6 class="deal-title">Giày thể thao dành cho thể thao</h6>
                                 </div>
@@ -57,7 +57,7 @@
                 <div class="single-deal">
                     <div class="overlay"></div>
                     <img class="img-fluid w-100" src="../../../../../../resources/img/category/c5.jpg" alt="">
-                    <a href="../../../../../../resources/img/category/c5.jpg" class="img-pop-up" target="_blank">
+                    <a href="#" class="img-pop-up" target="_blank">
                         <div class="deal-details">
                             <h6 class="deal-title">Giày thể thao dành cho thể thao</h6>
                         </div>
