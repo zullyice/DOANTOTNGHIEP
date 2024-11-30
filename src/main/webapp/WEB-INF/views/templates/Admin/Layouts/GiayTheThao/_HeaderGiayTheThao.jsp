@@ -229,8 +229,8 @@
 
                 </form>
 
-                <div class="hello" style="margin-left: 100px">
-                    <a style="color: red">Hello: ${userLog.tenUser} ( ${userLog.role} )</a>
+                <div class="hello" style="margin-left: 450px;margin-top: 10px">
+                    <a style="color: red; font-size: 18px; flex-shrink:0;font-family: Courier">Xin Chào: ${userLog.tenUser}</a>
                 </div>
 
                 <%--                <div class="cart-icon" style="text-align: center; margin-left: 200px">--%>

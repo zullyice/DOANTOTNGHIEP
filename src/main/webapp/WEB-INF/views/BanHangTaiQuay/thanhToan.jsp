@@ -29,22 +29,19 @@
         />
         <style>
             .info {
-
-
                 margin: 0 auto;
-                height: 640px;
-                width: 1000px;
+                height: auto;
+                width: 1200px;
                 border: 1px solid rgb(173, 172, 172);
+                padding: 5px;
             }
 
 
             #listSP {
                 margin-top: 20px;
                 margin-bottom: 20px;
-                height: 420px;
+                height: auto;
                 overflow: auto;
-
-
             }
 
 
@@ -62,6 +59,51 @@
                 width: 80%;
                 margin: 0 auto;
             }
+            .invoice-header {
+              text-align: center;
+              margin-bottom: 20px;
+            }
+            .invoice-details,
+            .customer-details,
+            .items-table,
+            .totalstb {
+              width: 100%;
+              margin-bottom: 10px;
+              text-align: right;
+            }.invoice-details table,
+             .customer-details table,
+             .items-table table,
+             .totalstb table {
+               width: 100%;
+               border-collapse: collapse;
+
+             }
+             .invoice-details td,
+             .customer-details td,
+             .items-table th,
+             .items-table td{
+               border: 1px solid #000;
+               padding: 8px;
+               text-align: left;
+             }
+            totalstb td{
+               text-align: right;
+               padding: 8px;
+             }
+            .signature {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 40px;
+              margin-right: 30px;
+              margin-left: 30px;
+            }
+
+            .signature div {
+              text-align: center;
+            }
+            .items-table th {
+              background-color: #d09999;
+            }
         </style>
     </head>
 <body>
@@ -71,7 +113,7 @@
                 class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
         >
             <div class="image-container" style="flex-shrink: 0;">
-                <img src="../../../../../../resources/img/banner/banner-img-admin.png" alt="Shoe Image" style="width: 80px;">
+                <img src="../../../../../../resources/img/banner/banner-img-admin.png" alt="Shoe Image" style="width: 70px">
             </div>
             <a
                     href="http://localhost:8080/BanHangTaiQuay"
@@ -110,7 +152,6 @@
                         class="dropdown-menu text-small"
                         aria-labelledby="dropdownUser1"
                 >
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
                     <li><a class="dropdown-item" href="#">Cài đặt</a></li>
                     <li><a class="dropdown-item" href="#">Hồ Sơ</a></li>
                     <li>
@@ -127,61 +168,141 @@
 <section>
     <div class="info">
         <div id="listSP">
-            <h3 style="text-align: center;line-height: 30px; margin-top: 10px">HÓA ĐƠN THANH TOÁN</h3>
+            <div class="invoice-header">
+                <img alt="Company Logo" height="100"
+                     src="../../../../../../resources/img/banner/banner-img-admin.png"
+                     width="100px" style="margin-bottom: 20px"/>
+                <h1 style="color: red">
+                    HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+                </h1>
+                <h2>
+                    VAT INVOICE
+                </h2>
+                <p style="text-align: right;margin-right: 50px">
+                    Hà Nội, ngày 10 tháng 2 năm 2023
+                </p>
+            </div>
             <br>
-           <div style="margin-left: 10px">
-               <div>Cửa hàng : Easy-Shop, Đường Trịnh Văn Bô, Hà Nội</div>
-               <div>Nhân Viên: ${userLog.tenUser}</div>
-               <div>Mã số thuế : 0101243150</div>
-               <div>Số điện thoại : 0398525912</div>
-           </div>
+            <div class="invoice-details">
+                <table class="table-hover">
+                    <tr>
+                        <td>
+                        Cửa Hàng EASY SHOP
+                        </td>
+                        <td>
+                            Mẫu số: 01GTKT0/001
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mã số thuế: 0101243150
+                        </td>
+                        <td>
+                            Ký hiệu: TS/20E
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Địa chỉ: Số 1, Phố Trịnh Văn Bô, Phường Phương Canh, Quận Nam Từ Liêm, Thành phố Hà Nội, Việt
+                            Nam
+                        </td>
+                        <td>
+                            Số: 00000HD002
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Điện thoại: ${userLog.soDienThoai}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Số tài khoản: 8866634567 tại Ngân hàng TMCP Ngoại Thương, CN Thăng Long - Hà Nội
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <br>
-            <table class="table table-hover table-bordered" style="text-align: center">
-                <thead>
-                <tr>
-                    <th scope="col">STT</th>
-                    <th scope="col">Tên</th>
-                    <th scope="col">Size</th>
-                    <th scope="col">Màu sắc</th>
-                    <th scope="col">Số lượng</th>
-                    <th scope="col">Đơn giá</th>
-                    <th scope="col">Tổng</th>
-                </tr>
-                </thead>
-                <tbody>
-                <c:if test="${f:length(list)!=0}">
-                    <c:forEach items="${list}" var="hdct" varStatus="status">
-                        <tr>
-                            <td>${status.index+1}</td>
-                            <td>${hdct.giayTheThaoChiTiet.giayTheThao.tenGiayTheThao}</td>
-                            <td>${hdct.giayTheThaoChiTiet.size.size}</td>
-                            <td>${hdct.giayTheThaoChiTiet.mauSac.tenMauSac}</td>
-                            <td>${hdct.soLuong}</td>
-                            <td>${hdct.donGia}</td>
-                            <td>${hdct.soLuong*hdct.donGia}</td>
-                        </tr>
-                    </c:forEach>
+            <div class="items-table">
+                <table class="table table-hover table-bordered" style="text-align: center;">
+                    <thead>
                     <tr>
-                        <td colspan="6" style="text-align: left;">Tổng tiền:</td>
-                        <td id="total">${tt}</td>
+                        <th scope="col">STT</th>
+                        <th scope="col">Tên</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Màu sắc</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Đơn giá</th>
+                        <th scope="col">Tổng</th>
                     </tr>
-                    <tr>
-                        <td colspan="6" style="text-align: left;">Phần trăm giảm:</td>
-                        <td id="ptg">0%</td>
-                    </tr>
-                    <tr>
-                        <td colspan="6" style="text-align: left;">Số tiền giảm:</td>
-                        <td id="stg">0</td>
-                    </tr>
-                    <tr>
-                        <td colspan="6" style="text-align: left;">Tiền thanh toán:</td>
-                        <td id="ttt">${tt}</td>
-                    </tr>
-                </c:if>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    <c:if test="${f:length(list)!=0}">
+                        <c:forEach items="${list}" var="hdct" varStatus="status">
+                            <tr>
+                                <td>${status.index+1}</td>
+                                <td>${hdct.giayTheThaoChiTiet.giayTheThao.tenGiayTheThao}</td>
+                                <td>${hdct.giayTheThaoChiTiet.size.size}</td>
+                                <td>${hdct.giayTheThaoChiTiet.mauSac.tenMauSac}</td>
+                                <td>${hdct.soLuong}</td>
+                                <td>${hdct.donGia}</td>
+                                <td>${hdct.soLuong*hdct.donGia}</td>
+                            </tr>
+                        </c:forEach>
+                        <div class="totalstb">
+                            <table>
+                                <tr>
+                                    <td style="text-align: right">
+                                        Cộng tiền hàng:
+                                    </td>
+                                    <td id="total" style="text-align: right">${tt}</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right">
+                                        Phần trăm giảm:
+                                    </td>
+                                    <td id="ptg" style="text-align: right">0%</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right">
+                                        Số tiền giảm:
+                                    </td>
+                                    <td id="stg" style="text-align: right">0</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right">Tiền thanh toán</td>
+                                    <td id="ttt" style="text-align: right">${tt}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </c:if>
+                    </tbody>
+                </table>
+                <div class="signature">
+                    <div>
+                        <p>
+                            Người mua hàng
+                        </p>
+                        <p>
+                            (Ký, ghi rõ họ tên)
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Người bán hàng
+                        </p>
+                        <p>
+                            (Ký, ghi rõ họ tên)
+                        </p>
+                        <p>
+                            ${userLog.tenUser}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div id="saleInvoice">
+        <div id="saleInvoice" style="margin-top: 20px">
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Chương trình giảm giá </label>
                 <div class="col-sm-10">
@@ -192,8 +313,6 @@
                             <c:forEach items="${listCtgg}" var="ctgg" varStatus="status">
                                 <option value="${ctgg.id}">${ctgg.tenChuongTrinh}</option>
                             </c:forEach>
-
-
                         </c:if>
                     </select>
                 </div>
@@ -211,8 +330,6 @@
                 lại</a>
         </div>
     </div>
-
-
 </section>
 
 
