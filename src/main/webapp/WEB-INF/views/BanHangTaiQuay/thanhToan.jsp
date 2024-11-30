@@ -127,14 +127,16 @@
 <section>
     <div class="info">
         <div id="listSP">
-            <h3 style="text-align: center;line-height: 50px;">HÓA ĐƠN THANH TOÁN</h3>
+            <h3 style="text-align: center;line-height: 30px; margin-top: 10px">HÓA ĐƠN THANH TOÁN</h3>
             <br>
-            <div>Cửa hàng : Easy-Shop, Đường Trịnh Văn Bô, Hà Nội</div>
-            <div>Nhân Viên: ${userLog.tenUser} ( ${userLog.role} )</div>
-            <div>Mã số thuế : 0101243150</div>
-            <div>Số điện thoại : 0398525912</div>
-<br>
-            <table class="table table-hover" style="text-align: center">
+           <div style="margin-left: 10px">
+               <div>Cửa hàng : Easy-Shop, Đường Trịnh Văn Bô, Hà Nội</div>
+               <div>Nhân Viên: ${userLog.tenUser}</div>
+               <div>Mã số thuế : 0101243150</div>
+               <div>Số điện thoại : 0398525912</div>
+           </div>
+            <br>
+            <table class="table table-hover table-bordered" style="text-align: center">
                 <thead>
                 <tr>
                     <th scope="col">STT</th>
@@ -147,8 +149,6 @@
                 </tr>
                 </thead>
                 <tbody>
-
-
                 <c:if test="${f:length(list)!=0}">
                     <c:forEach items="${list}" var="hdct" varStatus="status">
                         <tr>
@@ -178,12 +178,8 @@
                         <td id="ttt">${tt}</td>
                     </tr>
                 </c:if>
-
-
                 </tbody>
             </table>
-
-
         </div>
         <div id="saleInvoice">
             <div class="mb-3 row">

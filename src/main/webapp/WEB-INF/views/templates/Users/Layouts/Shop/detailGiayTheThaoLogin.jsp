@@ -134,7 +134,7 @@
         <div class="col-6">
             <div class="text_Detail" style="margin-top: 30px">
                 <h5>
-                    <span style="margin-left: 50px;color: black;font-size: 30px">
+                    <span style="margin-left: 10px;color: black;font-size: 30px">
                         ${giayTheThao.tenGiayTheThao}
                     </span>
                 </h5>

@@ -185,7 +185,7 @@
             <!-- Combined image and text in the same link -->
             <a href="http://localhost:8080/TrangChu/Admin/home" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none" id="banner" style="margin-left: 0;">
                 <!-- Larger shoe image -->
-                <img src="../../../../../../resources/img/banner/banner-img-admin.png" alt="Shoe Image" style="width: 60px; margin-right: 10px;">
+                <img src="../../../../../../resources/img/banner/banner-img-admin.png" alt="Shoe Image" style="width: 70px; margin-right: 10px; margin-bottom: 20px">
                 <!-- Text: Sneaker Easy_Shop -->
                 <span style="font-family: Brush Script MT; font-weight: bold; font-size: 30px; color: orangered;">
                     Sneaker Easy_Shop
@@ -278,7 +278,7 @@
             <div id="all-product">
                 <div
                         class="container-fluid"
-                        style="display: flex; flex-wrap: wrap"
+                        style="display:flex; flex-wrap: wrap"
                         id="listProducts"
                 >
                     <!-- <c:forEach items="${list}" var="gtt">
@@ -358,7 +358,7 @@
         </div>
         <div class="col-4">
             <div id="listSP" >
-                <table class="table table-hover" >
+                <table class="table table-hover table-bordered" style="border: darkgoldenrod" >
                     <thead>
                     <tr>
                         <th scope="col">STT</th>
@@ -1340,7 +1340,7 @@
 
                             newRow.innerHTML = `
 
-                              <td style="text-align: center">
+                              <td style="text-align: center;">
                                 <i
                                   class="bi bi-x-lg cancel"
                                   onclick="removeCartDetail(`+`\``+data.id+`\``+`,this)"

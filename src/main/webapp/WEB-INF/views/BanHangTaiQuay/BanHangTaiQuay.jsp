@@ -116,7 +116,7 @@
             <a href="http://localhost:8080/TrangChu/Admin/home" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none" id="banner" style="margin-left: 0;">
                 <div class="image-container me-0">
                     <!-- Increased the width of the shoe image -->
-                    <img src="../../../../../../resources/img/banner/banner-img-admin.png" alt="Shoe Image" style="width: 100px; margin-right: 10px;">
+                    <img src="../../../../../../resources/img/banner/banner-img-admin.png" alt="Shoe Image" style="width: 100px; margin-right: 10px">
                 </div>
                 <div class="text-container" style="font-size: 30px; font-weight: bold; font-family: Brush Script MT; color: orangered;">
                     Easy_Shop
@@ -149,7 +149,7 @@
     <div class="row">
         <div class="col-8">
             <div id="cart-detail">
-                <table class="table table-hover">
+                <table class="table table-hover table-bordered">
                     <tbody id="cart-detail-product">
 
                     </tbody>
@@ -159,8 +159,7 @@
                 <div
                         class="container-fluid"
                         style="display: flex; flex-wrap: wrap"
-                        id="listProducts"
-                >
+                        id="listProducts">
                     <!-- <c:forEach items="${list}" var="gtt">
                         <div class="card card-product" style="width: 9.8rem">
                             <img
