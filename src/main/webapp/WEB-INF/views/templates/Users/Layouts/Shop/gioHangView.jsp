@@ -72,7 +72,7 @@
 
     <form action="${pageContext.request.contextPath}/GiayTheThao/nguoiDung/addHoaDon" method="post" onsubmit="return validateQuantity()">
 
-    <table style="border:1px solid #FAFAFA; width:1150px; margin-top: 40px">
+    <table class="table-bordered table-hover" style="border:1px solid #FAFAFA; width:1150px; margin-top: 40px">
         <thead>
         <tr>
             <th scope="col" style="text-align: center;color: black; width: 40px">
@@ -80,8 +80,8 @@
             </th>
             <th scope="col" style="text-align: center;color: black">Tên giầy thể thao</th>
             <th scope="col" style="text-align: center;color: black">Hình ảnh</th>
-            <th scope="col" style="text-align: center;color: black">Phân loại hàng</th>
-            <th scope="col" style="text-align: center;color: black">Giá bán</th>
+            <th scope="col" colspan="2" style="text-align: center;color: black">Phân loại hàng</th>
+            <th scope="col"  style="text-align: center;color: black">Giá bán</th>
             <th scope="col" style="text-align: center;color: black">Số lượng</th>
 <%--            <th scope="col" style="text-align: center;color: black">Đơn giá</th>--%>
             <th scope="col" style="text-align: center;color: black">Functions</th>
@@ -107,8 +107,10 @@
                          <img style="width: 100px;margin-bottom: 10px" src="/upload/${gioHangChiTiet.giayTheThaoChiTiet.giayTheThao.image.get(0).link}" alt="">
                     </td>
                     <td style="padding-top: 20px; text-align: center; color: black">
-                            Size: ${gioHangChiTiet.giayTheThaoChiTiet.size.size},
-                            Màu sắc: ${gioHangChiTiet.giayTheThaoChiTiet.mauSac.tenMauSac}
+                            Size: ${gioHangChiTiet.giayTheThaoChiTiet.size.size}
+                    </td>
+                    <td style="padding-top: 20px; text-align: center; color: black">
+                        Màu sắc: ${gioHangChiTiet.giayTheThaoChiTiet.mauSac.tenMauSac}
                     </td>
                     <td style="padding-top: 20px; text-align: center; color: black">
 
@@ -130,7 +132,7 @@
                     <td style="padding-top: 20px; text-align: center; color: black">
                         <button style="width: 30px" type="button" class="btn" onclick="updateQuantity('decrease', ${i.index})">-</button>
 
-                        <input id="soLuong-${i.index}" style="width: 45px" name="soLuong" type="number"
+                        <input id="soLuong-${i.index}" style="width: 45px;text-align: center" name="soLuong" type="number"
                                value="${gioHangChiTiet.soLuong}"
                                onchange="validateAndSetQuantity(this, 5, ${gioHangChiTiet.giayTheThaoChiTiet.soLuong})"
                                data-available-quantity="${gioHangChiTiet.giayTheThaoChiTiet.soLuong}">

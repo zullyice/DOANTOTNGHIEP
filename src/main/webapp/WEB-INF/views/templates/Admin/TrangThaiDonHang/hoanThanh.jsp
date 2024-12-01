@@ -100,10 +100,10 @@
                     </tr>
                 </c:forEach>
             </table>
-            <ul class="pagination">
+            <ul class="pagination" style="">
                 <c:if test="${not page.first}">
                     <li class="page-item">
-                        <a href="?pageNo=${page.number -1}">Pre</a>
+                        <a class="page-link" href="?pageNo=${page.number -1}">Previous</a>
                     </li>
                 </c:if>
                 <c:forEach begin="0" end="${page.totalPages > 1 ? page.totalPages - 1 : 0}" var="i">
@@ -113,7 +113,7 @@
                 </c:forEach>
                 <c:if test="${not page.last}">
                     <li class="page-item">
-                        <a href="?pageNo=${page.number +1}">Next</a>
+                        <a class="page-link" href="?pageNo=${page.number +1}">Next</a>
                     </li>
                 </c:if>
             </ul>

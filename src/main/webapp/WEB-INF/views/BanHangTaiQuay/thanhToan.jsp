@@ -207,7 +207,7 @@
                             Nam
                         </td>
                         <td>
-                            Số: 00000HD002
+                            Mã Hóa Đơn: ${hd.MaHD}
                         </td>
                     </tr>
                     <tr>
@@ -217,7 +217,7 @@
                     </tr>
                     <tr>
                         <td>
-                            Số tài khoản: 8866634567 tại Ngân hàng TMCP Ngoại Thương, CN Thăng Long - Hà Nội
+                            Số tài khoản: 8866634567 tại Ngân hàng Thương mại cổ phần Kỹ Thương Việt Nam, CN NINH BÌNH
                         </td>
                     </tr>
                 </table>

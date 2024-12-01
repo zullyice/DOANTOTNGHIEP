@@ -79,12 +79,12 @@
                 <%--                Todo code phân trang giầy thể thao--%>
                             <div class="row">
                                 <div class="col-12">
-                                    <ul class="pagination" style="margin-left: 400px; ">
+                                    <ul class="pagination" style="margin-left: 470px">
                                         <br>
                                         <c:choose>
                                             <c:when test="${currentPage > 1}">
-                                                <li class="page-item">
-                                                    <a href="/TrangChu/listGiayTheThao?pageNum=${currentPage - 1}" class="page-link" style="border: 1px ;width: 100px">Previous</a>
+                                                <li class="page-item" >
+                                                    <a class="page-link" style="width: 50px" href="/TrangChu/listGiayTheThao?pageNum=${currentPage - 1}">Pre</a>
                                                 </li>
                                             </c:when>
                                             <c:otherwise>
@@ -100,7 +100,7 @@
 
                                         <c:if test="${currentPage < totalPage}">
                                             <li class="page-item">
-                                                <a href="/TrangChu/listGiayTheThao?pageNum=${currentPage + 1}" class="page-link" style="border: 1px; width: 50px">Next</a>
+                                                <a href="/TrangChu/listGiayTheThao?pageNum=${currentPage + 1}" class="page-link" style="width: 50px">Next</a>
                                             </li>
                                         </c:if>
                                     </ul>

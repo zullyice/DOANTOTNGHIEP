@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="row" style="margin-top: 0px">
-                            <div class="col-8" style="margin-left: 0px;margin-right: 65px">
+                            <div class="col-8" style="margin-left: 0px;margin-right: 45px">
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                        aria-expanded="false">
@@ -102,9 +102,7 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a class="nav-link" href="/TrangChu/ThongTinCaNhan" style="color: black;font-weight: bold">
-                                            <%--                                        Thông tin cá nhân--%>
-                                            Xin Chào : <span style="color: red">
-                                            ${khachHangLog.tenKhachHang}
+                                            Xin Chào : <span style="color: red">${khachHangLog.tenKhachHang}
                                         </span>
                                         </a></li>
                                         <li class="nav-item">
